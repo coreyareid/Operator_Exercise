@@ -10,12 +10,14 @@ static  void Mathmatics()
         "and the remainder.");
     int x = Convert.ToInt32(Console.ReadLine());
      int y = Convert.ToInt32(Console.ReadLine());
-
-    Console.WriteLine($"Your answer for addition is: "+"{0} + {1} = {2}", x, y, x + y);
-    Console.WriteLine($"Your answer for subtraction is: "+"{0} - {1} = {2}", x, y, x - y);
-    Console.WriteLine($"Your answer for multiplication is: " + "{0} * {1} = {2}", x, y, x * y);
-    Console.WriteLine($"Your answer for division is: " + "{0} / {1} = {2}", x, y, x / y);
-    Console.WriteLine($"Your answer for the remainder of: " + "{0} devided by {1} is {2}", x, y, x % y);
+    int remainder = x % y;
+    int division = x / y;
+    Console.WriteLine("Your answer for addition is: " + "{0} + {1} = {2}", x, y, x + y);
+    Console.WriteLine("Your answer for subtraction is: " + "{0} - {1} = {2}", x, y, x - y);
+    Console.WriteLine("Your answer for multiplication is: " + "{0} * {1} = {2}", x, y, x * y);
+    Console.WriteLine("Your answer for division is: " + "{0} / {1} = {2}", x, y, x / y);
+    Console.WriteLine("Your answer for the remainder of: " + "{0} devided by {1} is {2}", x, y, x % y);
+    Console.WriteLine($" {x} / {y} is {division} with a remainder of {remainder}");
 }
 
 Mathmatics();
