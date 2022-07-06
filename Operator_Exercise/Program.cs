@@ -12,11 +12,13 @@ static  void Mathmatics()
      int y = Convert.ToInt32(Console.ReadLine());
     int remainder = x % y;
     int division = x / y;
-    Console.WriteLine("Your answer for addition is: " + "{0} + {1} = {2}", x, y, x + y);
-    Console.WriteLine("Your answer for subtraction is: " + "{0} - {1} = {2}", x, y, x - y);
-    Console.WriteLine("Your answer for multiplication is: " + "{0} * {1} = {2}", x, y, x * y);
-    Console.WriteLine("Your answer for division is: " + "{0} / {1} = {2}", x, y, x / y);
-    Console.WriteLine("Your answer for the remainder of: " + "{0} devided by {1} is {2}", x, y, x % y);
+    int addition = x + y;
+    int subtraction = x - y;
+    int multiplication = x * y;
+
+    Console.WriteLine($" {x} + {y} is {addition}");
+    Console.WriteLine($" {x} - {y} is {subtraction}");
+    Console.WriteLine($" {x} * {y} is {multiplication}");
     Console.WriteLine($" {x} / {y} is {division} with a remainder of {remainder}");
 }
 
@@ -26,9 +28,9 @@ Mathmatics();
 
 static void AreaOfCircle()
 {
-    Console.WriteLine("Input the radius of a circle to get the area.");
+    Console.WriteLine("\n\n Input the radius of a circle to get the area.");
     double radius = Convert.ToDouble(Console.ReadLine());
-    double area = Math.PI * radius * radius;
+    double area = Math.PI * Math.Pow(radius, 2);
     Console.WriteLine($"The area of a circle with a radius of: {radius}" + " is " + area);
 }
 
